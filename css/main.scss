@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:wght@600;700&family=Barlow:wght@600&family=Cairo:wght@300;400;600&family=Commissioner:wght@400;500;700&family=Epilogue:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&family=Inter:wght@500;600;700&family=Josefin+Sans:wght@300&family=Lato:ital,wght@1,700&family=Manrope:wght@800&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600;700&family=Outfit:wght@400;700&display=swap');
+@import './var';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    background-color: $main-bg;
+    font-family: $family;
+}
+header {
+    @media #{$mobile} {
+        padding: 20px 20px;
+    }
+    padding: 40px 50px;
+}
+.main-section {
+    @media #{$mobile} {
+        padding: 100px 20px;
+        .notif {
+            button {
+                width: 100%;
+            }
+        }
+        img {
+            &.user1 {
+                display: none;
+            }
+            &.user2 {
+                top: 10% !important;
+            }
+            &.user4 {
+                display: none;
+            }
+            &.user5 {
+                display: none;
+            }
+            &.user6 {
+                left: unset !important;
+                right: 1% !important;
+                top: unset !important;
+                bottom: 4% !important;
+            }
+        }
+    }
+    padding: 100px 50px;
+    h1 {
+        font-size: 50px;
+        font-weight: 900;
+        color: $title-color;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        color: $text-color;
+        margin-bottom: 20px;
+        &::first-letter {
+            text-transform: capitalize;
+        }
+    }
+    .notif {
+        button {
+            border: none;
+            outline: none;
+            background-color: $title-color;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 10px;
+            color: hsl(0, 0%, 20%);
+            transition: all .3s ease-in-out;
+            &:hover {
+                opacity: .95;
+            }
+        }
+    }
+    img {
+        position: absolute;
+        z-index: -11;
+        &.user1 {
+            top: 50%;
+            right: 5%;
+
+        }
+        &.user2 {
+            top: 5%;
+            right: 5%;
+ 
+        }
+        &.user3 {
+            top: 15%;
+            left: 5%;
+        }
+        &.user4 {
+            bottom: -10%;
+            right: 5%;
+            
+        }
+        &.user5 {
+            top: 17%;
+            right: 25%;
+            
+        }
+        &.user6 {
+            top: 50%;
+            left: 50%;
+        }
+    }
+}
+
+footer {
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $twitter-color;
+
+        i {
+            color: #0a456f;
+            font-size: 24px;
+        }
+    }
+    span {
+        font-size: 14px;
+        font-weight: 500;
+        color: $text-color;
+        margin-left: 10px;
+    }
+}
+
+
+
+

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:wght@600;700&family=Barlow:wght@600&family=Cairo:wght@300;400;600&family=Commissioner:wght@400;500;700&family=Epilogue:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&family=Inter:wght@500;600;700&family=Josefin+Sans:wght@300&family=Lato:ital,wght@1,700&family=Manrope:wght@800&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600;700&family=Outfit:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: #008080;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  padding: 40px 50px;
+}
+@media (max-width: 767px) {
+  header {
+    padding: 20px 20px;
+  }
+}
+
+.main-section {
+  padding: 100px 50px;
+}
+@media (max-width: 767px) {
+  .main-section {
+    padding: 100px 20px;
+  }
+  .main-section .notif button {
+    width: 100%;
+  }
+  .main-section img.user1 {
+    display: none;
+  }
+  .main-section img.user2 {
+    top: 10% !important;
+  }
+  .main-section img.user4 {
+    display: none;
+  }
+  .main-section img.user5 {
+    display: none;
+  }
+  .main-section img.user6 {
+    left: unset !important;
+    right: 1% !important;
+    top: unset !important;
+    bottom: 4% !important;
+  }
+}
+.main-section h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #66cdaa;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.main-section p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #d9d9d9;
+  margin-bottom: 20px;
+}
+.main-section p::first-letter {
+  text-transform: capitalize;
+}
+.main-section .notif button {
+  border: none;
+  outline: none;
+  background-color: #66cdaa;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px;
+  color: #333333;
+  transition: all .3s ease-in-out;
+}
+.main-section .notif button:hover {
+  opacity: .95;
+}
+.main-section img {
+  position: absolute;
+  z-index: -11;
+}
+.main-section img.user1 {
+  top: 50%;
+  right: 5%;
+}
+.main-section img.user2 {
+  top: 5%;
+  right: 5%;
+}
+.main-section img.user3 {
+  top: 15%;
+  left: 5%;
+}
+.main-section img.user4 {
+  bottom: -10%;
+  right: 5%;
+}
+.main-section img.user5 {
+  top: 17%;
+  right: 25%;
+}
+.main-section img.user6 {
+  top: 50%;
+  left: 50%;
+}
+
+footer {
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #00acee;
+}
+footer a i {
+  color: #0a456f;
+  font-size: 24px;
+}
+footer span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #d9d9d9;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
